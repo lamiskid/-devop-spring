@@ -63,7 +63,34 @@
 	</dependencies>
 
 	<build>
+
+		<pluginManagement>
+
+
+
+
+			<plugins>
+
+
+
+			</plugins>
+		</pluginManagement>
 		<plugins>
+
+			<plugin>
+				<groupId>com.google.cloud.tools</groupId>
+				<artifactId>jib-maven-plugin</artifactId>
+				<version>3.4.3</version>
+				<configuration>
+					<from>
+						<image>openjdk:alpine</image>
+					</from>
+					<to>
+						<image>abdolade/devops</image>
+					</to>
+				</configuration>
+			</plugin>
+
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
@@ -76,7 +103,14 @@
 					</excludes>
 				</configuration>
 			</plugin>
+
 		</plugins>
+
+
+
+
+
+
 	</build>
 
 </project>

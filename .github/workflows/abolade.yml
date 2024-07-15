@@ -1,4 +1,4 @@
-name: CI with Maven
+name: abolade
 
 on:
   push:
@@ -50,7 +50,8 @@ jobs:
           cache: 'maven'
 
       - name: Build and push Docker image
-        run: mvn compile jib:build \
+        run: |
+           mvn compile jib:build \
           -Djib.to.image=docker.io/aboladetech/dev:latest \
           -Djib.to.auth.username=${{ secrets.DOCKER_USERNAME }} \
           -Djib.to.auth.password=${{ secrets.DOCKER_PASSWORD }}

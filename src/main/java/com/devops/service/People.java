@@ -1,2 +1,5 @@
-package com.devops.service;public class People {
+package com.devops.service;
+
+public class People {
+
 }

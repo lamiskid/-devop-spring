@@ -1,2 +1,8 @@
-package com.devops.service;public class LovePeople {
+package com.devops.service;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class LovePeople {
+
 }

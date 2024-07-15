@@ -1,4 +1,4 @@
-name: lawal
+name: love
 
 on:
   push:
@@ -45,8 +45,8 @@ jobs:
       - name: Set up Maven
         uses: actions/setup-java@v3
         with:
-          distribution: 'adopt'
-          java-version: '11'
+          distribution: 'temurin'
+          java-version: '17'
           cache: 'maven'
 
       - name: Build and push Docker image
